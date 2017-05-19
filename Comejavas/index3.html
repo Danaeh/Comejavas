@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JUEGO BLACKJACK</title>
+  <link rel="stylesheet" href="styles/stylesbj.css">
+  <link href="https://fonts.googleapis.com/css?family=Cherry+Cream+Soda" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h2>BLACKJACK</h2>
+
+    <div class="table-cloth">
+      <div class="playtable">
+
+        <div class="table">
+          <p class="gamer">
+            PLAYER
+          </p>
+          <p id="scr">
+            0
+          </p>
+          <div class="hand">
+            <div class="peke">
+              <img src="images/reverso2.png" alt="reverso de carta poker">
+            </div>
+            <div id= "cardjs"></div>
+          </div>
+        </div>
+
+        <div class="table">
+          <p class="gamer2">CROUPIER</p>
+          <div class="hand">
+            <div class="peke">
+              <img src="images/reverso2.png" alt="reverso de carta poker">
+            </div>
+            <div id="croupierValue"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <aside >
+        <div>
+          <button id="hit" type="button" name="button hit">HIT</button>
+          <p>Take another card</p>
+
+          <button id="stand" type="button" name="button stand">STAY</button>
+          <p>No more cards</p>
+
+          <button id="reset" type="button" name="button reset" onClick="document.location.reload(true)" >RESET</button>
+          <p>Restart the game</p>
+        </div>
+
+
+        <div class="peke">
+          <p>PLAYER SCORE</p>
+          <p class="score" id="pScore"></p>
+
+          <p>CROUPIER SCORE</p>
+          <p class="score" id="cScore"></p>
+        </div>
+        <div class="backHome ">
+          <button id="backHomeBtn"  type="button"><a class="linkA" href="index.html">HOME</a></button>
+        </div>
+      </aside>
+      <audio id="bjmusic" src="sounds/Scott_Joplin-The_Entertainer.mp3">
+
+      </audio>
+    </div>
+  </main>
+
+  <div id="info"></div>
+
+  <script src="js/mainbj.js" charset="utf-8"></script>
+</body>
+</html>

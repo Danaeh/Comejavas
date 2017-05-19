@@ -1,0 +1,487 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Cherry Cream Soda', cursive;
+  background-color: black;
+  margin: 0;
+}
+
+.logo{
+  width: 350px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fa9c00;
+  color: white;
+}
+
+.menu{
+  display: flex;
+  text-decoration: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.limenu{
+  text-decoration: none;
+  list-style: none;
+  width: 80px;
+}
+
+.namemenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.games{
+  width: 300px;
+  height: 100px;
+  color: bold white;
+  font-size: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:40px;
+}
+
+.game1{
+  margin-top: 40px;
+  background-color: #ef0707;
+}
+
+.game2{
+  background-color:#66feff;
+}
+
+.game3{
+  background-color:#ff9899;
+}
+
+.borderGame1{
+  border: 5px dotted #fa9c00;;
+  padding-top: 5%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bodyGame1{
+  font-size: 1em;
+  color: white;
+  margin: 2%;
+  overflow-x: hidden;
+}
+
+.titleGame1{
+  animation: titleGame1 2s linear 4 ;
+}
+
+@keyframes titleGame1 {
+  0% {
+    opacity: 0;
+    color: black;
+  }
+  50% {
+    opacity: 1;
+  }
+  100%{
+    color: white;
+  }
+}
+
+.containerGame1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resetBtnGame1{
+  justify-content: center;
+}
+
+.guessNumber{
+  width: 60% ;
+  height: 350px;
+  border-radius: 10%;
+  background-color: #fa9c00;
+  text-align: center;
+}
+
+.btnGame1{
+  font-family: 'Cherry Cream Soda',cursive;
+  text-decoration-style: none;
+  border-radius: 30%;
+  padding: 2%;
+  font-size: 0.9em;
+}
+
+.backHomeBtn{
+  background-color: #ff9899 ;
+  color: black;
+  margin-top: 15%;
+  margin-left: 14px;
+}
+
+.buttonEnterGame1{
+  background-color: #66feff;
+  color: purple;
+  padding: 1.5%;
+  margin-top: 2%;
+}
+
+.inputGame1{
+  background-color: #ff9899;
+  color: purple;
+  text-align: center;
+  font-weight: bold;
+  width: 70px;
+}
+
+.resetGame1{
+  visibility: hidden;
+  background-color: #66feff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pointsGame1{
+  background-color: #faf908;
+  color: purple;
+}
+
+.modal1{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 60%;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+.buttonModalGame1{
+  background-color: #ef0707;
+  color:white;
+  margin-top: 15%;
+  font-size: 1.2em;
+  padding: 5%;
+}
+
+.containerRules{
+  background-color: #66feff;
+  color: black;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.closeGame1{
+  text-decoration-style: none;
+  border-radius: 30%;
+  color: black;
+  width: 20%;
+  height: 10%;
+}
+
+.closeGame1:hover,
+.closeGame1:focus{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.imagesGame1{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-top: 230px;
+  animation: moveGame1 8s linear infinite ;
+}
+
+.iconGame1{
+  width: 60px;
+  animation: blinkerGame1 2s linear infinite ;
+}
+
+@keyframes blinkerGame1 {
+  50% {opacity: 0;}
+}
+
+@keyframes moveGame1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.containerGame3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.backgroundImageGame3{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 30%;
+}
+
+.textGame3{
+  color: white;
+  font-size: 1.8em;
+}
+
+.backHomeGame3 {
+  background-color: #ff9899 ;
+  border-radius: 30%;
+  font-size: 1.2em;
+}
+
+.backHomeGame3 a{
+  text-decoration: none;
+  color: white;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  color: white;
+  border: 3px dotted #faf908;
+  padding-bottom: 2%;
+}
+
+.linkA {
+  text-decoration: none;
+  color: white;
+}
+
+.bigGhost{
+  width: 40px;
+}
+
+.twitterIco {
+  display: none;
+}
+
+.webName {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 2%;
+  padding: 1%;
+  margin-bottom: 0%;
+  border: 3px dotted #faf908;
+}
+
+.webName p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.names {
+  font-size: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.names p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.namesBigScreen{
+  display: none;
+}
+
+@media (min-width:640px) {
+
+  .logo{
+    width: 400px;
+  }
+
+  .nav{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .limenu{
+    width: 80px;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .games{
+    width: 500px;
+    height: 100px;
+    font-size: 2.2em;
+  }
+
+  .bodyGame1{
+    font-size: 1.2em;
+    margin-top: 2%;
+  }
+
+  .guessNumber{
+    width: 60% ;
+    height: 400px;
+  }
+
+  .containerGame3{
+    margin-top: 6% ;
+  }
+
+  .backgroundImageGame3{
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+
+  .textGame3{
+    font-size: 2.7em;
+  }
+
+  .backHomeGame3{
+    font-size: 1.4em;
+  }
+
+  .webName{
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .imagesGame1{
+    padding-top: 160px;
+  }
+
+  .iconGame1{
+    width: 70px;
+  }
+
+  .names {
+    font-size: 1.5em;
+    width: 80%;
+  }
+
+  .namesLeft{
+    display: none;
+  }
+
+  .namesRigth{
+    display: none;
+  }
+
+  .twitterIco {
+    display: inline;
+    width: 20px;
+    margin-right: 30px;
+  }
+
+  .namesBigScreen{
+    display: flex;
+  }
+
+  .bigGhost{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+}
+
+@media (min-width:1024px) {
+
+  .gamebuttons{
+    align-items: flex-end;
+  }
+
+  .limenu{
+    width: 100px;
+  }
+
+  .games{
+    width: 600px;
+    height: 100px;
+    font-size: 2.3em;
+  }
+
+  .game1{
+    margin-top: 40px;
+  }
+
+  .bodyGame1{
+    margin-top: 1.3%;
+  }
+
+  .titleGame1{
+    font-size: 2.8em;
+    margin: 15px;
+  }
+
+  .guessNumber{
+    width: 60% ;
+    height: 400px;}
+
+    .btnGame1{
+      padding: 1%;
+      font-size: 0.9em;
+    }
+
+    .buttonModalGame1{
+      font-size: 1.4em;
+      padding: 4%;
+    }
+
+    .backHomeBtn{
+      margin-top: 10%;
+      margin-left: 23px;
+    }
+
+    .resetGame1{
+      font-size: 1em;
+      margin-top: 10px;
+      padding: 1%;
+    }
+
+    .containerGame3{
+      margin-top: 3%;
+    }
+
+    .backgroundImageGame3{
+      margin-top: 4%;;
+    }
+
+    .iconGame1{
+      width: 80px;
+    }
+
+    .names {
+      font-size: 1.5em;
+      width: 95%;
+      margin-bottom: 10px;
+    }
+  }

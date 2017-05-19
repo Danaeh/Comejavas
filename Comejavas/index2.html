@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Cherry+Cream+Soda" rel="stylesheet">
+  <title>Game 1</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<div class="borderGame1">
+
+  <body class="bodyGame1">
+    <div class="containerGame1">
+
+      <div class="guessNumber">
+
+        <h1 class="titleGame1">Game 1</h1>
+        <p>Can you guess the number???</p>
+        <input id="inputGame1" class="btnGame1 inputGame1" type="number">
+        <button id ="buttonEnterGame1" class="btnGame1 buttonEnterGame1" type="button">Enter</button>
+        <p id="infoGame1" class="btnGame1 infoGame1"></p>
+        <button id="pointsGame1" class="btnGame1 pointsGame1" type="button"></button>
+
+        <div class="resetBtnGame1">
+          <button id="resetGame1" class="btnGame1 resetGame1" type="button"><a href="index2.html">START AGAIN</a></button>
+        </div>
+
+      </div>
+
+      <audio id="audioWinnerGame1" src="sounds/soundwinner.flac" preload="auto">
+      </audio>
+
+      <audio id="audioLoserGame1" src="sounds/soundloser.wav" preload="auto">
+      </audio>
+
+      <div class="buttonsHyR">
+
+        <div class="backHome ">
+          <button id="backHomeBtn" class="btnGame1 backHomeBtn" type="button"><a class="linkA" href="index.html">HOME</a></button>
+        </div>
+
+        <button id="buttonModalGame1" class="btnGame1 buttonModalGame1" type="button" name="button">RULES</button>
+        <div class="modal1">
+          <div class="containerRules">
+            <span class="closeGame1">&times;</span>
+            <p>1. Guess a number between 0 and 99</p>
+            <p>2. You have 7 tries </p>
+            <p>3. After each try the system will tell you if your number is too high or too low</p>
+            <p>4. You can start over by clicking in the button Start Again</p>
+            <p>5. Good Luck!!! </p>
+          </div>
+        </div>
+
+      </div>
+
+      <audio id="GamePlayMusic" src="sounds/ambientSound.wav">
+
+      </audio>
+
+    </div>
+
+    <script src="js/main.js" charset="utf-8"></script>
+
+  </body>
+
+  <div class="imagesGame1">
+    <img class="iconGame1" src="images/ghost1.png" alt="ghost1">
+    <img class="iconGame1" src="images/ghost2.png" alt="ghost2">
+    <img class="iconGame1" src="images/ghost3.png" alt="ghost3">
+    <img class="iconGame1" src="images/ghost4.png" alt="ghost4">
+
+  </div>
+</div>
+</htm

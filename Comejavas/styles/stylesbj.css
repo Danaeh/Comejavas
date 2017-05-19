@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  color: black;
+  font-family: 'Cherry Cream Soda',cursive;
+  font-size: 16px;
+}
+
+main {
+  width: 100%;
+  height: 612px;
+  background-color: black;
+  border: 10px dotted #fa9c00;
+}
+a{
+  text-decoration: none;
+  color: lightskyblue;
+}
+p{
+  margin: 5px 0px;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  color: lightskyblue;
+}
+
+aside {
+  border: 5px dotted black;
+  height: 95%;
+  width: 20%;
+  margin-top: 0.75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.75em;
+}
+
+button {
+  border-radius: 2px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: lightskyblue;
+}
+
+.table-cloth {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 500px;
+  background-color: #fa9c00;
+  border: 3px double black;
+  margin-right: 0px;
+}
+.playtable{
+  width: 100%;
+}
+.table{
+  max-width: 80%;
+  min-width: 380px;
+  max-height: 50%;
+  height: 45%;
+}
+
+.hand{
+  display: flex;
+  justify-content: flex-start;
+  max-height:100%;
+}
+
+.gamer2 {
+  margin-top: 50px;
+}
+
+.peke{
+  margin: 2px;
+  width: 25%;
+  margin-right: 3px;
+}
+.peke p{
+  margin 5px;
+}
+.peke img{
+  border-radius: 12px;
+
+}
+.individualCard{
+  background-color: white;
+  border: 3px solid lightskyblue;
+  border-radius: 12px;
+
+}
+
+.individualCard:not(:first-child){
+  margin-left: -80px;
+}
+
+.individualCard:last-child {
+  animation: show 1.2s ;
+}
+
+@keyframes show{
+  0% {transform:scale(1.2)}
+}
+
+#info{
+  color: black;
+  margin-top: -350px;
+  margin-left: 525px;
+  font-size: 14px;
+}
+
+#cardjs{
+  width:100%;
+  display: flex;
+  flex-grow: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#scr{
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  width: 7%;
+}
